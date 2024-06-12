@@ -1,0 +1,29 @@
+94.64nF
+46.30k
+463.2k
+467.8k
+10.70nF
+
+
+Hmax = 1/sqrt(2) * 7.5 = 5,3033
+
+f =1Hz Vo = 7.5V; Vi = 820mV
+f=1.2 Vo = 7V
+f=1.4 Vo = 7V
+f=1.8 Vo = 6.5V
+f=2.5 Vo = 5.8V
+f = 3 Vo = 5.2V
+
+t_10 = 6ms, Vo = -825mV
+t_90 = 160ms, Vo = -7.2V
+
+
+circuito2
+
+fmax = 13.2Hz, Vo = 1.003V, Vi = 989mV
+
+t_10 = 300ms, Vo = -500mV
+t_90 = 13.5ms, Vo = -4.5V
+
+
+
