@@ -1,0 +1,132 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+
+\subsubsection{Projeto do Filtro}
+Para o segundo circuito, que inclui um resistor de carga \( R_L = 22 \, k\Omega \), o filtro precisa ser projetado para alcançar uma frequência de corte de 50 Hz usando um capacitor de 100 nF. Ajustando a equação da frequência de corte com a presença de uma carga, temos:
+
+\begin{equation}
+    R = \frac{R_L}{C \times R_L \times 2\pi \times f_c - 1}
+\end{equation}
+
+Substituindo os valores de \( R_L = 22 \, k\Omega \), \( C = 100 \, nF \), e \( f_c = 50 \, Hz \), obtemos:
+
+\begin{equation}
+    R = \frac{22 \times 10^3}{100 \times 10^{-9} \times 22 \times 10^3 \times 2\pi \times 50 - 1} \approx -71.197 \, k\Omega
+\end{equation}
+
+Dado que \( -71.197 \, k\Omega \) não é um valor padrão, é escolhido o valor comercial mais próximo disponível nas séries E12 ou E24. Os valores possíveis poderiam ser 68 kΩ ou 75 kΩ. Considerando a disponibilidade e a proximidade com o valor ideal, o valor de 68 kΩ é geralmente aceitável e facilmente encontrado.
+
+\begin{equation}
+    R_{comercial} = 68 \, k\Omega
+\end{equation}
+
+Considerando o resistor \( R \) de \( 68 \, k\Omega \) e a carga \( R_L \) de \( 22 \, k\Omega \), a constante \( K \) é calculada como:
+\begin{equation}
+    K = \frac{R_L}{R + R_L} = \frac{22 \, k\Omega}{68 \, k\Omega + 22 \, k\Omega} = \frac{22}{90} \approx 0.244
+\end{equation}
+
+Substituindo o valor de \( K \) e \( R = 68 \, k\Omega \) na equação para a frequência de corte \( \omega_c \), temos:
+\begin{equation}
+    \omega_c = \frac{1}{K \times R \times C} = \frac{1}{0.244 \times 68 \times 10^3 \times 100 \times 10^{-9}} \approx 60 \, \text{Hz}
+\end{equation}
+
+Esta nova frequência de corte mostra o impacto do resistor de carga \( R_L \) na performance do filtro, elevando a frequência de corte comparada ao valor de 50 Hz originalmente desejado, confirmando a importância de considerar o impacto da carga durante o projeto do filtro.
+
+Este valor escolhido, embora maior do que o valor calculado, ainda proporcionará uma frequência de corte próxima ao desejado, demonstrando a flexibilidade e adaptabilidade do projeto em acomodar componentes padrão de mercado.
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Circuito 1} & \textbf{Freq (Hz)} & \textbf{$V_i$ (V)} & \textbf{$V_o$ (V)} \\
+        \hline
+        & 100m & 5.11 & 4.90 \\
+        & 1.06 & 5.11 & 4.90 \\
+        & 10.6 & 5.11 & 4.78 \\
+        & 26.5 & 5.11 & 4.38 \\
+        & 39.75-39.8 & 5.11 & 3.90 \\
+        & 53 & 5.11 & 3.46 \\
+        & 66.25-66.3 & 5.11 & 3.10 \\
+        & 84.8 & 5.11 & 2.61 \\
+        & 132.5 & 5.11 & 1.89 \\
+        & 185.5 & 5.11 & 1.41 \\
+        & 265 & 5.11 & 1.01 \\
+        & 530 & 5.11 & 560m \\
+        & 1060 & 5.11 & 360m \\
+        \hline
+        \multicolumn{3}{|l|}{$f_{c\_med} = 53 \text{ Hz}$} \\
+        \multicolumn{3}{|l|}{$V_{f_{c\_med}} = 3.46 \text{ V}$} \\
+        \hline
+    \end{tabular}
+    \caption{Medições do Circuito 1}
+    \label{tab:circuito1}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Circuito 2} & \textbf{Freq (Hz)} & \textbf{$V_i$ (V)} & \textbf{$V_o$ (V)} \\
+        \hline
+        & 100m & 5.11 & 2.09 \\
+        & 2.94-3 & 5.11 & 2.05 \\
+        & 29.4 & 5.11 & 2.01 \\
+        & 73.5 & 5.11 & 1.81 \\
+        & 110.25-110.3 & 5.11 & 1.57 \\
+        & 147 & 5.11 & 1.41 \\
+        & 183.75 & 5.11 & 1.21 \\
+        & 235.2 & 5.11 & 1.01 \\
+        & 365.6 & 5.11 & 760m \\
+        & 514.5 & 5.11 & 600m \\
+        & 735 & 5.11 & 440m \\
+        & 1470 & 5.11 & 280m \\
+        & 2940 & 5.11 & 200m \\
+        \hline
+        \multicolumn{3}{|l|}{$f_{c\_med} = 147 \text{ Hz}$} \\
+        \multicolumn{3}{|l|}{$V_{f_{c\_med}} = 1.41 \text{ V}$} \\
+        \hline
+    \end{tabular}
+    \caption{Medições do Circuito 2}
+    \label{tab:circuito2}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Circuito 3} & \textbf{Freq (Hz)} & \textbf{$V_i$ (V)} & \textbf{$V_o$ (V)} \\
+        \hline
+        & 100m & 5.11 & 5.03 \\
+        & 0.86-0.9 & 5.11 & 4.46 \\
+        & 8.6 & 5.11 & 4.38 \\
+        & 24.5 & 5.11 & 4.14 \\
+        & 32.25-32.30 & 5.11 & 3.86 \\
+        & 43 & 5.11 & 3.50 \\
+        & 53.75-53.8 & 5.11 & 3.38 \\
+        & 68.8 & 5.11 & 2.93 \\
+        & 107.5 & 5.11 & 1.81 \\
+        & 150.5 & 5.11 & 1.33 \\
+        & 215 & 5.11 & 1.04 \\
+        & 430 & 5.11 & 520m \\
+        & 860 & 5.11 & 320m \\
+        \hline
+        \multicolumn{3}{|l|}{$V_{3\_fc} = 5.03 \div \sqrt{2} = 3.55 \text{ V}$} \\
+        \multicolumn{3}{|l|}{$f_{c\_med} = 43 \text{ Hz}$ (osciloscópio)} \\
+        \hline
+    \end{tabular}
+    \caption{Medições do Circuito 3}
+    \label{tab:circuito3}
+\end{table}
+
+
+
+
+
+
+\end{document}

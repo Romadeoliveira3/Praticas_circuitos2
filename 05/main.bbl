@@ -1,0 +1,65 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Analog Devices 2024]{ltspice}
+\abntrefinfo{Analog Devices}{ANALOG DEVICES}{2024}
+{ANALOG DEVICES. \emph{LTspice}. 2024. Software de simulação de circuitos
+  eletrônicos.
+Disponível em:
+  \url{https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html}.
+  Acesso em: 15 de maio de 2024.}
+
+\bibitem[Keysight InfiniiVision Manual do osciloscópio 2023]{keysight_manual}
+\abntrefinfo{Keysight\ldots}{KEYSIGHT\ldots}{2023}
+{KEYSIGHT InfiniiVision Manual do osciloscópio.
+[S.l.], 2023. Acesso em: 15 de maio de 2024. Dispon{\'\i}vel em:
+  \url{https://www.dropbox.com/s/cmvdgjmbbwzqls1/manual}.}
+
+\bibitem[{Keysight Technologies}]{keysight-u1250}
+\abntrefinfo{{Keysight Technologies}}{{Keysight Technologies}}{}
+{{Keysight Technologies}. \emph{U1250 Series Handheld Digital Multimeters}.
+  [S.l.]: Keysight Technologies. [s.d.].}
+
+\bibitem[Kuo 1966]{kuo1966network}
+\abntrefinfo{Kuo}{KUO}{1966}
+{KUO, F.~F. \emph{Network Analysis and Synthesis}. [S.l.: s.n.], 1966.
+  494--496~p.}
+
+\bibitem[Luiz 2023]{ufpe2023pratica}
+\abntrefinfo{Luiz}{LUIZ}{2023}
+{LUIZ, S. O.~D. \emph{5a Prática de Laboratório}. 2023. Universidade Federal
+  de Pernambuco, Departamento de Eletrônica e Sistemas.
+Curso de EL216 - Circuitos 2, 2o semestre de 2023.}
+
+\bibitem[{Matplotlib Development Team} 2023]{matplotlib}
+\abntrefinfo{{Matplotlib Development Team}}{{Matplotlib Development
+  Team}}{2023}
+{{Matplotlib Development Team}. \emph{Matplotlib: Visualization with Python}.
+[S.l.], 2023. Acesso em: 15 de maio de 2024. Dispon{\'\i}vel em:
+  \url{https://matplotlib.org/}.}
+
+\bibitem[{Python Software Foundation} 2023]{python}
+\abntrefinfo{{Python Software Foundation}}{{Python Software Foundation}}{2023}
+{{Python Software Foundation}. \emph{Python Programming Language}.
+[S.l.], 2023. Acesso em: 15 de maio de 2024. Dispon{\'\i}vel em:
+  \url{https://www.python.org/}.}
+
+\bibitem[Semiconductor 2021]{lm324_datasheet}
+\abntrefinfo{Semiconductor}{SEMICONDUCTOR}{2021}
+{SEMICONDUCTOR, O. \emph{LM324, LM324A, LM324E, LM224, LM2902, LM2902E,
+  LM2902V, NCV2902 Datasheet}.
+[S.l.], 2021. Publication Order Number: LM324/D. Dispon{\'\i}vel em:
+  \url{https://www.onsemi.com/pub/Collateral/LM324-D.PDF}.}
+
+\bibitem[{SymPy Development Team} 2023]{sympy}
+\abntrefinfo{{SymPy Development Team}}{{SymPy Development Team}}{2023}
+{{SymPy Development Team}. \emph{SymPy: Python library for symbolic
+  mathematics}.
+[S.l.], 2023. Acesso em: 15 de maio de 2024. Dispon{\'\i}vel em:
+  \url{https://www.sympy.org/}.}
+
+\end{thebibliography}
